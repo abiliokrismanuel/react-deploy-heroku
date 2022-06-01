@@ -22,5 +22,5 @@ jobs:
         with:
           args: deploy --dir=build --prod
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: 'react-heroq-abilio'
+          heroku_app_name: 'react-action-deploy'
           heroku_email: 'abilio.krismanuel@ti.ukdw.ac.id'
