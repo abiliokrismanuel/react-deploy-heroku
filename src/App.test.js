@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
+/* eslint-disable testing-library/prefer-screen-queries */
+import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe ("Testing",()=>{
+  
+  test("pastikan ada ada +",()=>{
+    // eslint-disable-next-line testing-library/render-result-naming-convention
+    const component = render(<App/>);
+    const counterApp = component.getByText("+");
+    expect(counterApp).toBeInTheDocument();
+  }
+  )
+}
+)

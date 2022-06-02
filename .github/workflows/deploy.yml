@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: 17.x
       - run: yarn install
+      - name: Testing
+      - run: yarn run test
       - run: yarn run build --if-present
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
